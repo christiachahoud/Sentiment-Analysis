@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hybrid-classifier"
+version = "0.1.0"
+description = ""
+authors = ["Christia <c.chahoud@ob-soft.com>"]
+readme = "README.md"
+packages = [{include = "hybrid_classifier", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "^2.7.0"
+transformers = "4.49.0"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+numpy = "^2.2.5"
+tqdm = "^4.67.1"
+
+[tool.poetry.scripts]
+train-model = "hybrid_classifier.training_finetuned:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
