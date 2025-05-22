@@ -4,3 +4,6 @@ __pycache__/
 
 # Ignore environment files
 .venv/
+
+# model.pt
+best_hybrid_model.pt
